@@ -1,4 +1,4 @@
-$primary-color: black;
+$primary-color: rgb(53, 52, 52);
 $secondary-color: forestgreen;
 $show-home-image: true;
 $home-image: url(../img/three-ridges.jpg);
@@ -14,6 +14,7 @@ $background-opacity: 0.2;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      background-position: center;
 
       &:after {
         content: "";
@@ -40,25 +41,25 @@ $background-opacity: 0.2;
 
 // Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 782px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1098px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 1099px) and (max-width: 1452px) {
     @content;
   }
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1171px) {
+  @media screen and (min-width: 1453px) {
     @content;
   }
 }
