@@ -1,3 +1,3 @@
-# sass-portfolio
+# Portfolio Landing Page
 
- Portfolio site built using HTML, SASS, and JavaScript
+ Portfolio site built using HTML, Sass, and JavaScript
