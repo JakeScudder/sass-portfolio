@@ -1,2 +1,3 @@
 # sass-portfolio
- Updated Portfolio site with Sass
+
+ Portfolio site built using HTML, SASS, and JavaScript
