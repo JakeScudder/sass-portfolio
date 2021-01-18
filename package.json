@@ -11,7 +11,7 @@
   "author": "Jake Morris",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.14.1"
+    "gh-pages": "^3.1.0",
+    "node-sass": "^5.0.0"
   }
 }
