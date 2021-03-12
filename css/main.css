@@ -115,6 +115,12 @@ body {
       height: 100%;
       z-index: -1; }
 
+.home-heading-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 h1,
 h2,
 h3 {
@@ -124,13 +130,20 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 4rem; }
+    h1.lg-heading.project,
+    h2.lg-heading.project,
+    h3.lg-heading.project {
+      font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
     padding: 0.2rem rem;
     background: rgba(61, 60, 60, 0.5);
-    width: fit-content; }
+    width: 100%; }
+
+h4 {
+  margin-bottom: 0px;
+  margin-top: 0.7rem; }
 
 a {
   color: white;
@@ -148,7 +161,9 @@ main {
   padding: 2rem 2rem 0rem 2rem;
   min-height: calc(100vh - 45px); }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 2rem;
+    width: 40%;
+    display: flex; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -205,6 +220,19 @@ main {
     padding: 0.5rem;
     border-bottom: #164d16 5px solid; }
 
+.project-heading-div {
+  background: #929292;
+  width: fit-content;
+  font-size: 24px;
+  border-radius: 5px;
+  margin-bottom: 1.5rem; }
+
+.project-greeting {
+  margin-bottom: 2rem;
+  background: #929292;
+  width: fit-content;
+  border-radius: 5px; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -217,10 +245,26 @@ main {
     background: #b5b3b3;
     color: white;
     font-size: 1.3rem; }
+    .projects .no-host.info {
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      justify-content: center;
+      padding: 0; }
+      .projects .no-host.info.digital {
+        font-size: 14px; }
+      .projects .no-host.info span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal; }
     .projects .no-host .fab {
       font-weight: 600; }
   .projects img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     border: 3px solid white; }
     .projects img:hover {
       opacity: 0.5;
@@ -275,13 +319,13 @@ main {
 
 @media screen and (min-width: 1453px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 1099px) and (max-width: 1452px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 1098px) {
+@media screen and (max-width: 1250px) {
   body {
     overflow: auto; }
   main {
@@ -317,7 +361,7 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 900px) {
   main#home h1 {
     margin-top: 10vh; }
   main {
