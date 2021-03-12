@@ -32,6 +32,8 @@ h3 {
 
   &.lg-heading {
     font-size: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 
     &.project {
       font-size: 3rem;
@@ -41,13 +43,19 @@ h3 {
   &.sm-heading {
     padding: 0.2rem rem;
     background: rgba(lighten($primary-color, 3), 0.5);
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
 h4 {
   margin-bottom: 0px;
   margin-top: 0.7rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 a {
@@ -73,6 +81,9 @@ main {
     margin-top: 2rem;
     width: 40%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
     a {
       padding: 0.4rem;
