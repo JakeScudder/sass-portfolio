@@ -17,6 +17,13 @@ body {
 
 // Headings
 
+.home-heading-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 h1,
 h2,
 h3 {
@@ -25,14 +32,22 @@ h3 {
 
   &.lg-heading {
     font-size: 4rem;
+
+    &.project {
+      font-size: 3rem;
+    }
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
     padding: 0.2rem rem;
     background: rgba(lighten($primary-color, 3), 0.5);
-    width: fit-content;
+    width: 100%;
   }
+}
+
+h4 {
+  margin-bottom: 0px;
+  margin-top: 0.7rem;
 }
 
 a {
@@ -55,7 +70,9 @@ main {
   min-height: calc(100vh - 45px);
 
   .icons {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    width: 40%;
+    display: flex;
 
     a {
       padding: 0.4rem;
@@ -150,6 +167,21 @@ main {
 }
 
 // Work Projects
+.project-heading-div {
+  background: lighten(grey, 7);
+  width: fit-content;
+  font-size: 24px;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.project-greeting {
+  margin-bottom: 2rem;
+  background: lighten(grey, 7);
+  width: fit-content;
+  border-radius: 5px;
+}
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -164,6 +196,26 @@ main {
     color: white;
     font-size: 1.3rem;
 
+    &.info {
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      justify-content: center;
+      padding: 0;
+
+      &.digital {
+        font-size: 14px;
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+      }
+    }
+
     .fab {
       font-weight: 600;
     }
@@ -171,6 +223,8 @@ main {
 
   img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     border: 3px solid white;
 
     &:hover {
