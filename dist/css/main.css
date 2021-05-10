@@ -5,7 +5,7 @@
   top: 40px;
   background-color: silver;
   padding: 7.5px;
-  border-radius: 10px;
+  border-radius: 3px;
   border: 3px solid #9a9a9a;
   cursor: pointer;
   transition: all 0.5s ease-out; }
@@ -13,7 +13,7 @@
     width: 28px;
     height: 4px;
     margin: 5px 0 5px 0;
-    background: #2d7d2d;
+    background: #259bbf;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg);
@@ -44,15 +44,15 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #282727;
+    background: #cdcdcd;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    background: rgba(40, 39, 39, 0.9);
+    background: rgba(205, 205, 205, 0.9);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(40, 39, 39, 0.9);
+    background: rgba(205, 205, 205, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -62,7 +62,7 @@
       height: 250px;
       background: url("../img/portrait-centered.png");
       border-radius: 50%;
-      border: solid 3px #2d7d2d;
+      border: solid 5px #259bbf;
       background-size: cover; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -70,7 +70,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #2d7d2d; }
+      color: #259bbf; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: white;
+    color: black;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -100,8 +100,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #a9c7da;
-  color: white;
+  background: #4a87ac;
+  color: black;
   height: 100vh;
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
@@ -138,18 +138,19 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     line-height: 3.3rem;
-    border: 5px solid #52505045;
-    border-radius: 5px;
+    border: 3px solid #ffffff;
+    border-radius: 3px;
     padding: 5px; }
     h1.lg-heading.project,
     h2.lg-heading.project,
     h3.lg-heading.project {
-      font-size: 3rem; }
+      font-size: 3rem;
+      border: 3px solid #52505045; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     padding: 0.2rem rem;
-    background: rgba(61, 60, 60, 0.5);
+    background: rgba(226, 226, 226, 0.5);
     width: 393px;
     margin-left: auto;
     margin-right: auto;
@@ -196,16 +197,20 @@ main {
       margin-top: 7vh;
       width: 393px;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      background: white; }
 
 #about #about-heading {
-  width: 100%; }
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #e4e0e0; }
 
 #about .lg-heading {
-  font-size: 2rem;
-  width: 300px;
+  font-size: 2.3rem;
   margin-bottom: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  color: black; }
 
 .about-info {
   display: grid;
@@ -236,9 +241,9 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.1rem;
-    background: #4f4d4d;
+    background: #f4f4f4;
     padding: 0.5rem;
-    border: #078dcaed 5px solid; }
+    border: #ffffff 3px solid; }
   .about-info .job-1 {
     grid-area: job1;
     display: flex;
@@ -249,12 +254,12 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #424141;
+    background: #e7e7e7;
     padding: 0.5rem;
-    border-bottom: #078dcaed 5px solid; }
+    border-bottom: #ffffff 3px solid; }
 
 .project-heading-div {
-  background: silver;
+  background: #f4f4f4;
   width: fit-content;
   font-size: 24px;
   border-radius: 5px;
@@ -262,11 +267,11 @@ main {
 
 .project-greeting {
   margin-bottom: 2rem;
-  background: silver;
+  background: #f4f4f4;
   width: fit-content;
   line-height: 2.5rem;
-  border: 5px solid #52505045;
-  border-radius: 5px;
+  border: 3px solid #52505045;
+  border-radius: 3px;
   padding: 5px; }
 
 .projects {
@@ -278,8 +283,8 @@ main {
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
-    background: #b5b3b3;
-    color: white;
+    background: white;
+    color: black;
     font-size: 1.3rem;
     text-align: center; }
     .projects .no-host.info {
@@ -302,8 +307,7 @@ main {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border: 3px solid white;
-    border: 6px solid #52505045;
+    border: 3px solid #c7c7c7;
     box-shadow: 3px 3px 2.5px #000000;
     border-radius: 4px;
     margin-bottom: 5px; }
@@ -349,21 +353,22 @@ main {
     color: white; }
 
 .btn-light {
-  background: #b5b3b3;
+  background: white;
   color: white; }
 
 .btn-dark {
-  background: #686767;
-  color: white;
+  background: #f4f4f4;
+  color: black;
   text-align: center; }
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
-  background: #1b1b1b;
+  padding: 7px;
+  background: #bdbdbd;
+  color: black;
+  height: 36px;
   color: white;
-  height: 45px;
-  color: white; }
+  margin-top: 1rem; }
 
 @media screen and (min-width: 1453px) {
   .projects {

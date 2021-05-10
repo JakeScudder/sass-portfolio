@@ -7,7 +7,7 @@
 
 body {
   @include background();
-  background: #a9c7da;
+  background: #4a87ac;
   color: set-text-color($primary-color);
   height: 100vh;
   margin: 0;
@@ -35,12 +35,13 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     line-height: 3.3rem;
-    border: 5px solid #52505045;
-    border-radius: 5px;
+    border: 3px solid #ffffff;
+    border-radius: 3px;
     padding: 5px;
 
     &.project {
       font-size: 3rem;
+      border: 3px solid #52505045;
     }
   }
 
@@ -107,6 +108,7 @@ main {
       width: 393px;
       display: flex;
       justify-content: center;
+      background: white;
     }
   }
 }
@@ -115,13 +117,16 @@ main {
 
 #about {
   #about-heading {
-    width: 100%;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(228, 224, 224);
   }
   .lg-heading {
-    font-size: 2rem;
-    width: 300px;
+    font-size: 2.3rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    color: black;
   }
 }
 
@@ -169,7 +174,7 @@ main {
     font-size: 1.1rem;
     background: lighten($primary-color, 10);
     padding: 0.5rem;
-    border: #078dcaed 5px solid;
+    border: #ffffff 3px solid;
   }
 
   .job-1 {
@@ -190,13 +195,13 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: #078dcaed 5px solid;
+    border-bottom: #ffffff 3px solid;
   }
 }
 
 // Work Projects
 .project-heading-div {
-  background: lighten(grey, 25);
+  background: lighten($primary-color, 10);
   width: fit-content;
   font-size: 24px;
   border-radius: 5px;
@@ -205,11 +210,11 @@ main {
 
 .project-greeting {
   margin-bottom: 2rem;
-  background: lighten(grey, 25);
+  background: lighten($primary-color, 10);
   width: fit-content;
   line-height: 2.5rem;
-  border: 5px solid #52505045;
-  border-radius: 5px;
+  border: 3px solid #52505045;
+  border-radius: 3px;
   padding: 5px;
 }
 
@@ -224,7 +229,7 @@ main {
     border: 0;
     margin-bottom: 0.3rem;
     background: lighten($primary-color, 50);
-    color: white;
+    color: black;
     font-size: 1.3rem;
     text-align: center;
 
@@ -257,8 +262,7 @@ main {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border: 3px solid white;
-    border: 6px solid #52505045;
+    border: 3px solid #c7c7c7;
     box-shadow: 3px 3px 2.5px #000000;
     border-radius: 4px;
     margin-bottom: 5px;
@@ -329,18 +333,20 @@ main {
 
 .btn-dark {
   @extend .btn;
-  background: lighten($primary-color, 20);
-  color: white;
+  background: lighten($primary-color, 10);
+  color: black;
   text-align: center;
 }
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 45px;
+  padding: 7px;
+  background: #bdbdbd;
+  color: black;
+  height: 36px;
   color: white;
+  margin-top: 1rem;
 }
+
 
 @import "mobile";
